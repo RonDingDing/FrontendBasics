@@ -1,0 +1,59 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+.sticky-sidebar-lesson {
+    width: 80%;
+    margin: auto;
+}
+
+.sticky-sidebar-lesson::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.sticky-sidebar-lesson .sandbox {
+    width: 60%;
+    margin: 0 0 40px;
+    float: left;
+}
+
+.sticky-sidebar {
+    background: #e7eef1;
+    padding: 40px 40px 60px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    box-shadow: 0 12px 0 -6px #fa90a3;
+    position: fixed;
+    right: 5%;
+    width: 36%;
+    float: right;
+}
+
+@media screen and (max-width: 1023px) {
+    .sticky-sidebar-lesson {
+        width: 80%;
+        margin: 17%;
+        float: none;
+        margin-bottom: 0;
+    }
+
+    .sticky-sidebar-lesson .sandbox {
+        width: 80%;
+        float: none;
+        margin-bottom: 0;
+    }
+    .sticky-sidebar {
+        clear: both;
+        position: relative;
+        float: none;
+        width: 80%;
+        right: 0%;
+        margin: 20px 0 20px 0;
+    }
+    h1 {
+        margin-left: 5%;
+    }
+}
